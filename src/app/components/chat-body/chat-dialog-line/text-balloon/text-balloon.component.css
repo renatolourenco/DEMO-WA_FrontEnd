@@ -1,0 +1,52 @@
+.dc_chat_dialog_ballon-ballon {
+    border-radius: 10px;
+    max-width: calc(80% - 60px);
+    padding: 10px 20px 10px 20px;
+}
+
+.dc_chat_dialog_ballon-ballon_p {
+    color: whitesmoke;
+    margin: 0;
+}
+
+.dc_chat_dialog_ballon-ballon_bot {
+    background-color: #3746D2;
+    float: left;
+    margin: 0 0 0 65px;
+}
+
+.dc_chat_dialog_ballon-ballon_bot::before {
+    border-right: 15px solid transparent;
+    border-top: 15px solid #3746D2;
+    bottom: -5px;
+    content: '';
+    left: 65px;
+    position: absolute;
+}
+
+.dc_chat_dialog_ballon-ballon_user {
+    background-color: #48F7F7;
+    float: right;
+    margin: 0 5px 0 0;
+}
+
+.dc_chat_dialog_ballon-ballon_user p {
+    color: black;
+}
+
+.dc_chat_dialog_ballon-ballon_user-withAvatarMargin {
+    margin: 0 65px 0 0;
+}
+
+.dc_chat_dialog_ballon-ballon_user::before {
+    border-top: 15px solid #48F7F7;
+    border-left: 15px solid transparent;
+    bottom: -5px;
+    content: '';
+    position: absolute;
+    right: 5px;
+}
+
+.dc_chat_dialog_ballon-ballon_user-withAvatarMargin::before {
+    right: 65px;
+}

@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{modal_title}}</h4>
+    <!-- {{ docConfirmation }} -->
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <p [innerHTML]="modal_body"></p>
+</div>
+<div class="modal-footer">
+    <div *ngIf="!docConfirmationWindow; else showDocConfirmation">
+        <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')"> Não </button>
+        <button type="button" class="btn btn btn-danger" (click)="activeModal.close('Close click'); cleanDialog()"> Sim </button>
+    </div>
+    <ng-template #showDocConfirmation>
+        <label class="container">
+            <input type="checkbox" [(ngModel)]="modal_footer.checked" (click)="getChecks()">
+            <span class="checkmark"> &nbsp; Li e aceito </span>
+        </label>
+        <button type="button" class="btn btn-success" (click)="activeModal.close('Close click'); saveRole()" [disabled]="!roleAccepted"> Enviar </button>
+        <button type="button" class="btn btn btn-danger"> Não </button>
+    </ng-template>
+</div>

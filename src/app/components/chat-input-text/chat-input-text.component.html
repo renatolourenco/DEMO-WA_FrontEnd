@@ -1,0 +1,4 @@
+<div class="dc_chat_input_text-text container-fluid">
+    <input type="text" (keyup.enter)="sendTxt(userText.value); userText.value=''" placeholder="Digite sua mensagem" autofocus #userText>
+    <i class="material-icons" (click)="sendTxt(userText.value); userText.value=''" > send </i>
+</div>

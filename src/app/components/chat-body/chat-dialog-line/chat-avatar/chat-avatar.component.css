@@ -1,0 +1,16 @@
+img {
+    height: 60px;
+}
+
+.dc_chat_dialog_avatar-avatar {
+    position: absolute;
+    bottom: -25px;
+}
+
+.dc_chat_dialog_avatar-avatar_bot {
+    left: 0;
+}
+
+.dc_chat_dialog_avatar-avatar_user {
+    right: 0;
+}

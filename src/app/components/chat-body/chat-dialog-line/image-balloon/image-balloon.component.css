@@ -1,0 +1,26 @@
+h5 {
+    margin: 0;
+}
+
+img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+span {
+    color: #878787;
+    font-size: 12.5px;
+}
+
+.dc_chat_dialog_image {
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    float: left;
+    max-width: 60%;
+    margin: 5px 0 5px 65px;
+}
+
+.dc_chat_dialog_image_info {
+    padding: 10px;
+}

@@ -1,0 +1,23 @@
+<div class="dc_chat_window {{ showBackground }}">
+
+  <div *ngIf="!showChatWindow; else notShowChatWindow">
+    <dc-chat-main-button></dc-chat-main-button>
+  </div>
+
+  <ng-template #notShowChatWindow>
+    <div class="dc_chat_header">
+      <dc-chat-header></dc-chat-header>
+    </div>
+
+    <div class="dc_chat_body" id="dc_chat_body">
+      <dc-chat-body></dc-chat-body>
+    </div>
+
+    <div class="dc_chat_input_text">
+      <dc-chat-input-text></dc-chat-input-text>
+    </div>
+
+  </ng-template>
+
+
+</div>

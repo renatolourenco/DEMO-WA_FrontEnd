@@ -1,0 +1,18 @@
+button {
+    background-color: #fec52e;
+    border: #fec52e;
+    border-radius: 50px;
+    height: 70px;
+    left: 70%;
+    position: absolute;
+    top: 80%;
+    width: 70px;
+}
+
+button:hover {
+    background-color: #374fc0;
+}
+
+i {
+    vertical-align: middle;
+}

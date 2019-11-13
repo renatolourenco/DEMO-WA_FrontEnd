@@ -1,0 +1,32 @@
+.dc_chat_header {
+    height: 80px;
+}
+
+.dc_chat_body {
+    height: calc(100% - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dc_chat_window-withBGC {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 0px rgba(0, 0, 0, 0.19);
+}
+
+.dc_chat_window-withoutBGC {
+    background-color: transparent;
+}
+
+.dc_chat_input_text {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 0px rgba(0, 0, 0, 0.19);
+    height: 50px;
+}
+
+.dc_chat_window {
+    height: 70%;
+    bottom: 15px;
+    position: absolute;
+    right: 15px;
+    width: 30%;
+}

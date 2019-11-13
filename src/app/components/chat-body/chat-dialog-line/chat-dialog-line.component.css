@@ -1,0 +1,6 @@
+.dc_chat_dialog_line {
+    display: table;
+    padding: 3px 0 3px 0;
+    position: relative;
+    width: 100%;
+}
